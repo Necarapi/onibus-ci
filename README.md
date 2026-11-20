@@ -3,6 +3,8 @@
 
 * Problema a ser resolvido: As linhas de ônibus de João Pessoa não oferecem tanta acessibilidade para deslocar-se ao CI (Centro de informatica), e muitas pessoas dependem desse meio de locomoção tanto para ir quanto para voltar da universidade. Porém, as opções de ônibus para o CI são muito escassas, localizadas em pontos isolados que podem ser um perigo com o passar do tempo.
 * O mini-sistema, utilizara valores aproximados para estimar o horário tanto de chegada no ponto, quanto de saída do terminal, tendo em mente que as estimativas já são inconsistentes.
+* Linhas disponiveis em questao: 203,207,304,307,508,9901.
+* Ate 4 linhas poderão ser cadastradas, e o horário de saída do terminal deverá ter como referencia o horário disponível no site da semob https://servicos.semobjp.pb.gov.br/linhas-de-onibus/.
 
 1. **Cadastro fixo de 4 linhas (`TAM = 4`):** Armazena número da linha, intervalo de saída do terminal (em minutos) e tempo de deslocamento até o ponto (em minutos).
 2. **Validação de entradas (`do-while`):** Número da linha e intervalo devem ser maiores que `0`; deslocamento deve ser `>= 0`; escolha da linha entre `1` e `4`; hora entre `0` e `23` e minuto entre `0` e `59`.
